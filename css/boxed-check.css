@@ -13,8 +13,7 @@
     display: none;
 }
 .boxed-check-group .boxed-check .boxed-check-label {
-    display: flex;
-    flex-direction: column;
+    display: block;
     background-color: #ffffff;
     border: 2px solid #dee2e6;
     padding: .5em 1em;
