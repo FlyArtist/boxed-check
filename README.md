@@ -1,6 +1,10 @@
 # BoxedCheck for Radio & Checkbox v1.0.0
 #### Making Radio & Checkbox into a box or card with Pure CSS and No Javascript!
 
+### Download
+
+ [https://github.com/FlyArtist/boxed-check/releases](https://github.com/FlyArtist/boxed-check/releases)
+
 ### Overview
 BoxedCheck has included components of Radio & Checkbox.
 
