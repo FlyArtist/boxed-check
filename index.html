@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BoxedCheck for Radio & Checkbox demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.0.1/styles/default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/boxed-check.css">
+</head>
+<body>
+
+<div class="container my-5">
+
+    <h1 class="">BoxedCheck for Radio & Checkbox v1.0.0</h1>
+    <p class="lead mb-5">Making <b><span class="text-danger">Radio & Checkbox</span></b> into a box or card with <b><span class="text-danger">Pure CSS</span></b> and <b><span class="text-danger">No Javascript!</span></b></p>
+
+    <h3 class="mt-5">Overview</h3>
+    <p><b>BoxedCheck</b> has included components of Radio & Checkbox.</p>
+    <h5>Radio:</h5>
+    <div class="overview-radio mb-3">
+        <div class="row boxed-check-group boxed-check-success">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview" checked>
+                    <div class="boxed-check-label">Normal</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview">
+                    <div class="boxed-check-label">Normal</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview" disabled>
+                    <div class="boxed-check-label">Disabled</div>
+                </label>
+            </div>
+        </div>
+        <div class="row boxed-check-group boxed-check-outline-success">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview">
+                    <div class="boxed-check-label">Outline</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview">
+                    <div class="boxed-check-label">Outline</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview" disabled>
+                    <div class="boxed-check-label">Disabled</div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <h5>Checkbox:</h5>
+    <div class="overview-checkbox mb-3">
+        <div class="row boxed-check-group boxed-check-success">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="checkbox" name="checkbox-overview" checked>
+                    <div class="boxed-check-label">Normal</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="checkbox" name="checkbox-overview">
+                    <div class="boxed-check-label">Normal</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="checkbox" name="checkbox-overview" disabled>
+                    <div class="boxed-check-label">Disabled</div>
+                </label>
+            </div>
+        </div>
+        <div class="row boxed-check-group boxed-check-outline-success">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="checkbox" name="checkbox-overview">
+                    <div class="boxed-check-label">Outline</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="checkbox" name="checkbox-overview">
+                    <div class="boxed-check-label">Outline</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="checkbox" name="checkbox-overview" disabled>
+                    <div class="boxed-check-label">Disabled</div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="mt-5">Quick Start</h3>
+    <p>Looking to quickly add <b>BoxedCheck</b> to your project? Copy-paste the stylesheet <span class="text-danger">&lt;link&gt;</span> into your <span class="text-danger">&lt;head&gt;</span> to load the CSS.</p>
+    <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;boxed-check.min.css&quot;&gt;</code></pre>
+
+    <h3 class="mt-5">Starter Template</h3>
+    <p>Be sure to have your pages set up with the latest design and development standards.</p>
+    <pre><code class="language-html">&lt;div class=&quot;boxed-check-group&quot;&gt;
+    &lt;label class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-demo&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Radio 1&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-demo&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Radio 2&lt;/div&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;checkbox&quot; name=&quot;checkbox-demo&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Checkbox 1&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;checkbox&quot; name=&quot;checkbox-demo&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Checkbox 2&lt;/div&gt;
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    <p>Or like this:</p>
+    <pre><code class="language-html">&lt;div class=&quot;boxed-check-group&quot;&gt;
+    &lt;div class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-demo&quot; id=&quot;radio-demo-1&quot;&gt;
+        &lt;label class=&quot;boxed-check-label&quot; for=&quot;radio-demo-1&quot; &gt;Radio 1&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-demo&quot; id=&quot;radio-demo-2&quot;&gt;
+        &lt;label class=&quot;boxed-check-label&quot; for=&quot;radio-demo-2&quot; &gt;Radio 2&lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;checkbox&quot; name=&quot;checkbox-demo&quot; id=&quot;checkbox-demo-1&quot;&gt;
+        &lt;label class=&quot;boxed-check-label&quot; for=&quot;checkbox-demo-1&quot; &gt;Checkbox 1&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;checkbox&quot; name=&quot;checkbox-demo&quot; id=&quot;checkbox-demo-1&quot;&gt;
+        &lt;label class=&quot;boxed-check-label&quot; for=&quot;checkbox-demo-2&quot; &gt;Checkbox 2&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <h3 class="mt-5">Themes</h3>
+    <p>You can use the <span class="text-danger">.boxed-check-*</span> classes to colorize <b>BoxedCheck</b>.</p>
+    <div class="theme">
+        <div class="row boxed-check-group boxed-check-default">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-default" checked>
+                    <div class="boxed-check-label">Default</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-default">
+                    <div class="boxed-check-label">Default</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-default" disabled>
+                    <div class="boxed-check-label">Default</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-secondary">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-secondary" checked>
+                    <div class="boxed-check-label">Secondary</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-secondary">
+                    <div class="boxed-check-label">Secondary</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-secondary" disabled>
+                    <div class="boxed-check-label">Secondary</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-primary">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-primary" checked>
+                    <div class="boxed-check-label">Primary</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-primary">
+                    <div class="boxed-check-label">Primary</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-primary" disabled>
+                    <div class="boxed-check-label">Primary</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-success">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-success" checked>
+                    <div class="boxed-check-label">Success</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-success">
+                    <div class="boxed-check-label">Success</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-success" disabled>
+                    <div class="boxed-check-label">Success</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-danger">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-danger" checked>
+                    <div class="boxed-check-label">Danger</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-danger">
+                    <div class="boxed-check-label">Danger</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-danger" disabled>
+                    <div class="boxed-check-label">Danger</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-warning">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-warning" checked>
+                    <div class="boxed-check-label">Warning</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-warning">
+                    <div class="boxed-check-label">Warning</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-warning" disabled>
+                    <div class="boxed-check-label">Warning</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-info">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-info" checked>
+                    <div class="boxed-check-label">Info</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-info">
+                    <div class="boxed-check-label">Info</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-info" disabled>
+                    <div class="boxed-check-label">Info</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-dark">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-dark" checked>
+                    <div class="boxed-check-label">Dark</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-dark">
+                    <div class="boxed-check-label">Dark</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-dark" disabled>
+                    <div class="boxed-check-label">Dark</div>
+                </label>
+            </div>
+        </div>
+        <pre><code class="language-html">&lt;div class=&quot;boxed-check-group boxed-check-default&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-secondary&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-primary&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-success&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-danger&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-warning&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-info&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-dark&quot;&gt; ... &lt;/div&gt;</code></pre>
+    </div>
+
+    <h3 class="mt-5">Themes With Outline</h3>
+    <p>Replace the default modifier classes with the <span class="text-danger">.boxed-check-outline-*</span> ones to remove all background images and colors on any <b>BoxedCheck</b>.</p>
+    <div class="theme-outline">
+        <div class="row boxed-check-group boxed-check-outline-default">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-default" checked>
+                    <div class="boxed-check-label">Default</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-default">
+                    <div class="boxed-check-label">Default</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-default" disabled>
+                    <div class="boxed-check-label">Default</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-outline-secondary">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-secondary" checked>
+                    <div class="boxed-check-label">Secondary</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-secondary">
+                    <div class="boxed-check-label">Secondary</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-secondary" disabled>
+                    <div class="boxed-check-label">Secondary</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-outline-primary">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-primary" checked>
+                    <div class="boxed-check-label">Primary</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-primary">
+                    <div class="boxed-check-label">Primary</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-primary" disabled>
+                    <div class="boxed-check-label">Primary</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-outline-success">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-success" checked>
+                    <div class="boxed-check-label">Success</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-success">
+                    <div class="boxed-check-label">Success</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-success" disabled>
+                    <div class="boxed-check-label">Success</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-outline-danger">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-danger" checked>
+                    <div class="boxed-check-label">Danger</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-danger">
+                    <div class="boxed-check-label">Danger</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-danger" disabled>
+                    <div class="boxed-check-label">Danger</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-outline-warning">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-warning" checked>
+                    <div class="boxed-check-label">Warning</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-warning">
+                    <div class="boxed-check-label">Warning</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-warning" disabled>
+                    <div class="boxed-check-label">Warning</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-outline-info">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-info" checked>
+                    <div class="boxed-check-label">Info</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-info">
+                    <div class="boxed-check-label">Info</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-info" disabled>
+                    <div class="boxed-check-label">Info</div>
+                </label>
+            </div>
+        </div>
+
+        <div class="row boxed-check-group boxed-check-outline-dark">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-dark" checked>
+                    <div class="boxed-check-label">Dark</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-dark">
+                    <div class="boxed-check-label">Dark</div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-outline-dark" disabled>
+                    <div class="boxed-check-label">Dark</div>
+                </label>
+            </div>
+        </div>
+        <pre><code class="language-html">&lt;div class=&quot;boxed-check-group boxed-check-outline-default&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-outline-secondary&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-outline-primary&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-outline-success&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-outline-danger&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-outline-warning&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-outline-info&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-outline-dark&quot;&gt; ... &lt;/div&gt;</code></pre>
+    </div>
+
+    <h3 class="mt-5">Using Custom Layout</h3>
+    <p>Adding custom Layout into <span class="text-danger">.boxed-check-label</span>.</p>
+    <div class="overview-radio mb-3">
+        <div class="row boxed-check-group boxed-check-success">
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview-custom" checked>
+                    <div class="boxed-check-label" style="text-align:center;">
+                        <h2>Breakfast</h2>
+                        <span>Good Morning</span>
+                    </div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview-custom">
+                    <div class="boxed-check-label text-center">
+                        <h2>Lunch</h2>
+                        <span>Good Afternoon</span>
+                    </div>
+                </label>
+            </div>
+            <div class="col-12 col-sm-4">
+                <label class="boxed-check">
+                    <input class="boxed-check-input" type="radio" name="radio-overview-custom">
+                    <div class="boxed-check-label text-center">
+                        <h2>Supper</h2>
+                        <span>Good Evening</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <pre><code class="language-html">&lt;div class=&quot;boxed-check-group boxed-check-success&quot;&gt;
+    &lt;label class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-overview-custom&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot; style=&quot;text-align:center;&quot;&gt;
+            &lt;h2&gt;Breakfast&lt;/h2&gt;
+            &lt;span&gt;Good Morning&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-overview-custom&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot; style=&quot;text-align:center;&quot;&gt;
+            &lt;h2&gt;Lunch&lt;/h2&gt;
+            &lt;span&gt;Good Afternoon&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-overview-custom&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot; style=&quot;text-align:center;&quot;&gt;
+            &lt;h2&gt;Supper&lt;/h2&gt;
+            &lt;span&gt;Good Evening&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <h3 class="mt-5">Contact</h3>
+    <p></p>
+    <table class="table table-hover">
+        <tr>
+            <th>GitHub</th>
+            <td><a href="https://github.com/FlyArtist/boxed-check/issues" target="_blank">Issue</a></td>
+        </tr>
+        <tr>
+            <th>Wechat</th>
+            <td><img src="http://res.beanie.top/x/personal_wechat.jpg" class="img-thumbnail" alt="contact wechat" style="max-height: 240px;"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><a href="mailto:450183439@qq.com">450183439@qq.com</a></td>
+        </tr>
+        <tr>
+            <th>QQ</th>
+            <td>450183439</td>
+        </tr>
+    </table>
+
+    <h3 class="mt-5">Donate</h3>
+    <p>Your donation is a great encouragement and support to the project. We will continue to develop and maintain.</p>
+    <div class="">
+        <img src="http://res.beanie.top/x/personal_wxpay.png" class="img-thumbnail" alt="donate" style="max-height: 320px;">
+        <img src="http://res.beanie.top/x/personal_alipay.png" class="img-thumbnail" alt="donate" style="max-height: 320px;">
+    </div>
+</div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
