@@ -3,7 +3,9 @@
 
 ### Download
 
- [https://github.com/FlyArtist/boxed-check/releases](https://github.com/FlyArtist/boxed-check/releases)
+* Document: [https://flyartist.github.io/boxed-check/index.html](https://flyartist.github.io/boxed-check/index.html)
+
+* Release: [https://github.com/FlyArtist/boxed-check/releases](https://github.com/FlyArtist/boxed-check/releases)
 
 ### Overview
 BoxedCheck has included components of Radio & Checkbox.
