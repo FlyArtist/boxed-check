@@ -1,29 +1,29 @@
-English [简体中文](README.CN.md)
+简体中文 [English](README.md)
 
 # BoxedCheck for Radio & Checkbox v1.0.0
-#### Making Radio & Checkbox into a box or card with Pure CSS and No Javascript!
+#### 纯净的CSS，没有任何JavaScript代码，盒式/卡片式的 Radio 和 Checkbox 美化!
 
-### Download
+### 下载
 
-* Document: [https://flyartist.github.io/boxed-check/index.html](https://flyartist.github.io/boxed-check/index.html)
+* 查看文档: [https://flyartist.github.io/boxed-check/index.html](https://flyartist.github.io/boxed-check/index.html)
 
-* Release: [https://github.com/FlyArtist/boxed-check/releases](https://github.com/FlyArtist/boxed-check/releases)
+* 发行版本: [https://github.com/FlyArtist/boxed-check/releases](https://github.com/FlyArtist/boxed-check/releases)
 
-### Overview
-BoxedCheck has included components of Radio & Checkbox.
+### 预览
+BoxedCheck 已经包含了 Radio 和 Checkbox 组件.
 
 ![overview](http://res.beanie.top/BoxedCheck/demo1.png)
 
 
-### Quick Start
+### 快速开始
 
-Looking to quickly add BoxedCheck to your project? Copy-paste the stylesheet ```<link>``` into your ```<head>``` to load the CSS.
+想快速添加 BoxedCheck 到您的项目中? 复制粘贴以下 ```<link>``` 到您的 ```<head>``` 中来加载 CSS.
 
 ```
 <link rel="stylesheet" href="boxed-check.min.css">
 ```
-### Starter Template
-Be sure to have your pages set up with the latest design and development standards.
+### 启动模板
+确保您的页面遵从了最新的设计规范和开发标准.
 
 
 	<div class="boxed-check-group">
@@ -46,7 +46,7 @@ Be sure to have your pages set up with the latest design and development standar
 	    </label>
 	</div>
 
-##### Or like this:
+##### 或者这样:
 
 	<div class="boxed-check-group">
 	    <div class="boxed-check">
@@ -68,8 +68,8 @@ Be sure to have your pages set up with the latest design and development standar
 	    </div>
 	</div>
 
-### Themes
-You can use the ```.boxed-check-*``` classes to colorize BoxedCheck.
+### 主题
+您可以使用类名 ```.boxed-check-*``` 为 BoxedCheck 装饰颜色.
 
 ![overview](http://res.beanie.top/BoxedCheck/demo2.png)
 
@@ -82,8 +82,8 @@ You can use the ```.boxed-check-*``` classes to colorize BoxedCheck.
 	<div class="boxed-check-group boxed-check-info"> ... </div>
 	<div class="boxed-check-group boxed-check-dark"> ... </div>
 
-### Themes With Outline
-Replace the default modifier classes with the ```.boxed-check-outline-*``` ones to remove all background images and colors on any BoxedCheck.
+### 无底色的主题
+将默认的类名替换为 ```.boxed-check-outline-*``` 将移除所有的底色和背景，并且只留下边框.
 
 ![overview](http://res.beanie.top/BoxedCheck/demo3.png)
 
@@ -96,8 +96,8 @@ Replace the default modifier classes with the ```.boxed-check-outline-*``` ones 
 	<div class="boxed-check-group boxed-check-outline-info"> ... </div>
 	<div class="boxed-check-group boxed-check-outline-dark"> ... </div>
 
-### Using Custom Layout
-Adding custom Layout into ```.boxed-check-label```.
+### 自定义布局
+往类名 ```.boxed-check-label``` 标签中添加代码.
 
 ![overview](http://res.beanie.top/BoxedCheck/demo4.png)
 
@@ -125,15 +125,15 @@ Adding custom Layout into ```.boxed-check-label```.
 	    </label>
 	</div>
 
-### Contact
+### 联系方式
 * GitHub: [Issue](https://github.com/FlyArtist/boxed-check/issues)
-* Wechat: ![wechat](http://res.beanie.top/x/personal_wechat.jpg)
-* Email: [450183439@qq.com](mailto:450183439@qq.com)
+* 微信: ![wechat](http://res.beanie.top/x/personal_wechat.jpg)
+* 邮箱: [450183439@qq.com](mailto:450183439@qq.com)
 * QQ: 450183439
 
-### Donate
+### 捐赠打赏
 
-Your donation is a great encouragement and support to the project. We will continue to develop and maintain.
+您的捐赠非常激励我们对该项目进行开发和维护，而且我们会更好地开发和维护该项目.
 
 ![wxpay](http://res.beanie.top/x/personal_wxpay.png)
 ![alipay](http://res.beanie.top/x/personal_alipay.png)
