@@ -21,7 +21,7 @@
 
 <div class="container my-5">
 
-    <h1 class="">BoxedCheck for Radio & Checkbox v1.0.0</h1>
+    <h1 class="">BoxedCheck for Radio & Checkbox v1.0.6</h1>
     <p class="lead mb-5">Making <b><span class="text-danger">Radio & Checkbox</span></b> into a box or card with <b><span class="text-danger">Pure CSS</span></b> and <b><span class="text-danger">No Javascript!</span></b></p>
 
     <h3 class="mt-5">Download</h3>
@@ -520,6 +520,98 @@
 &lt;div class=&quot;boxed-check-group boxed-check-outline-warning&quot;&gt; ... &lt;/div&gt;
 &lt;div class=&quot;boxed-check-group boxed-check-outline-info&quot;&gt; ... &lt;/div&gt;
 &lt;div class=&quot;boxed-check-group boxed-check-outline-dark&quot;&gt; ... &lt;/div&gt;</code></pre>
+    </div>
+
+    <h3 class="mt-5">Inline & Size</h3>
+    <div class="inline-and-size">
+        <p><b>BoxedCheck</b> on the same horizontal row by adding <span class="text-danger">.boxed-check-inline</span> to any <span class="text-danger">.boxed-check</span>.</p>
+        <div class="boxed-check-group boxed-check-default">
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-inline" checked>
+                <div class="boxed-check-label">Default</div>
+            </label>
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-inline">
+                <div class="boxed-check-label">Default</div>
+            </label>
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-inline" disabled>
+                <div class="boxed-check-label">Default</div>
+            </label>
+        </div>
+        <pre><code class="language-html">&lt;div class=&quot;boxed-check-group boxed-check-default&quot;&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-inline&quot; checked&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-inline&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-inline&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+
+        <p>Fancy larger or smaller <b>BoxedCheck</b>? Add <span class="text-danger">.boxed-check-lg</span> or <span class="text-danger">.boxed-check-sm</span> for additional sizes.</p>
+        <div class="boxed-check-group boxed-check-default boxed-check-lg">
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-size-lg" checked>
+                <div class="boxed-check-label">Default</div>
+            </label>
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-size-lg">
+                <div class="boxed-check-label">Default</div>
+            </label>
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-size-lg" disabled>
+                <div class="boxed-check-label">Default</div>
+            </label>
+        </div>
+        <div class="boxed-check-group boxed-check-default boxed-check-sm">
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-size-sm" checked>
+                <div class="boxed-check-label">Default</div>
+            </label>
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-size-sm">
+                <div class="boxed-check-label">Default</div>
+            </label>
+            <label class="boxed-check boxed-check-inline">
+                <input class="boxed-check-input" type="radio" name="radio-size-sm" disabled>
+                <div class="boxed-check-label">Default</div>
+            </label>
+        </div>
+        <pre><code class="language-html">
+&lt;div class=&quot;boxed-check-group boxed-check-default boxed-check-lg&quot;&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-size-lg&quot; checked&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-size-lg&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-size-lg&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;boxed-check-group boxed-check-default boxed-check-sm&quot;&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-size-sm&quot; checked&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-size-sm&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;boxed-check boxed-check-inline&quot;&gt;
+        &lt;input class=&quot;boxed-check-input&quot; type=&quot;radio&quot; name=&quot;radio-size-sm&quot;&gt;
+        &lt;div class=&quot;boxed-check-label&quot;&gt;Default&lt;/div&gt;
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
     </div>
 
     <h3 class="mt-5">Using Custom Layout</h3>

@@ -1,6 +1,6 @@
 简体中文 [English](README.md)
 
-# BoxedCheck for Radio & Checkbox v1.0.0
+# BoxedCheck for Radio & Checkbox v1.0.6
 #### 纯净的CSS，没有任何JavaScript代码，盒式/卡片式的 Radio 和 Checkbox 美化!
 
 ### 下载
@@ -69,7 +69,7 @@ BoxedCheck 已经包含了 Radio 和 Checkbox 组件.
 	</div>
 
 ### 主题
-您可以使用类名 ```.boxed-check-*``` 为 BoxedCheck 装饰颜色.
+您可以使用 ```.boxed-check-*``` 类为 BoxedCheck 装饰颜色.
 
 ![overview](http://res.beanie.top/BoxedCheck/demo2.png)
 
@@ -83,7 +83,7 @@ BoxedCheck 已经包含了 Radio 和 Checkbox 组件.
 	<div class="boxed-check-group boxed-check-dark"> ... </div>
 
 ### 无底色的主题
-将默认的类名替换为 ```.boxed-check-outline-*``` 将移除所有的底色和背景，并且只留下边框.
+将默认的主题类替换为 ```.boxed-check-outline-*``` 类将移除所有的底色和背景，并且只留下边框.
 
 ![overview](http://res.beanie.top/BoxedCheck/demo3.png)
 
@@ -96,8 +96,61 @@ BoxedCheck 已经包含了 Radio 和 Checkbox 组件.
 	<div class="boxed-check-group boxed-check-outline-info"> ... </div>
 	<div class="boxed-check-group boxed-check-outline-dark"> ... </div>
 
+### 内联元素 & 元素尺寸
+ 给任意 ```.boxed-check``` 类添加 ```.boxed-check-inline``` 类使 BoxedCheck 作为内联元素保持在一条水平线上.
+
+![overview](http://res.beanie.top/BoxedCheck/demo5.png)
+
+	<div class="boxed-check-group boxed-check-default">
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-inline" checked>
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-inline">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-inline">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	</div>
+
+需要更大或更小的 BoxedCheck 吗 ? 添加 ```.boxed-check-lg``` 或者 ```.boxed-check-sm``` 类可以设置按钮的不同尺寸.
+
+![overview](http://res.beanie.top/BoxedCheck/demo6.png)
+ 
+	<div class="boxed-check-group boxed-check-default boxed-check-lg">
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-lg" checked>
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-lg">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-lg">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	</div>
+	<div class="boxed-check-group boxed-check-default boxed-check-sm">
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-sm" checked>
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-sm">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-sm">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	</div>
+
 ### 自定义布局
-往类名 ```.boxed-check-label``` 标签中添加代码.
+往 ```.boxed-check-label``` 类标签中添加代码.
 
 ![overview](http://res.beanie.top/BoxedCheck/demo4.png)
 

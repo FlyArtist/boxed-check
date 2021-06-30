@@ -2,15 +2,33 @@
  * BoxedCheck from flyArtist v1.0.0
  * https://github.com/flyartist/boxed-check
  */
+.boxed-check-group,
 .boxed-check-group .boxed-check {
     position: relative;
-    display: block;
     margin-bottom: 10px;
+}
+.boxed-check-group .boxed-check {
+    display: block;
+}
+.boxed-check-group .boxed-check:last-child {
+    margin-bottom: 0;
+}
+.boxed-check-group .boxed-check.boxed-check-inline {
+    display: inline-block;
+    margin-bottom: 0;
 }
 .boxed-check-group .boxed-check .boxed-check-input {
     -webkit-appearance: none;
     -moz-appearance: none;
     display: none;
+}
+.boxed-check-group .boxed-check .boxed-check-input:disabled + .boxed-check-label {
+    border: 2px dashed #bec2c6;
+    opacity: .3;
+}
+.boxed-check-group .boxed-check .boxed-check-input:checked + .boxed-check-label,
+.boxed-check-group .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover{
+    border-color: #198754;
 }
 .boxed-check-group .boxed-check .boxed-check-label {
     display: block;
@@ -21,13 +39,11 @@
     border-radius: 10px;
     cursor: pointer;
 }
-.boxed-check-group .boxed-check .boxed-check-input:disabled + .boxed-check-label {
-    border: 2px dashed #bec2c6;
-    opacity: .3;
+.boxed-check-group.boxed-check-sm .boxed-check .boxed-check-label {
+    padding: .2em .7em;
 }
-.boxed-check-group .boxed-check .boxed-check-input:checked + .boxed-check-label,
-.boxed-check-group .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover{
-    border-color: #198754;
+.boxed-check-group.boxed-check-lg .boxed-check .boxed-check-label {
+    padding: .8em 1.3em;
 }
 
 /* boxed-check default theme */

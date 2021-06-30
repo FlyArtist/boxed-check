@@ -96,6 +96,59 @@ Replace the default modifier classes with the ```.boxed-check-outline-*``` ones 
 	<div class="boxed-check-group boxed-check-outline-info"> ... </div>
 	<div class="boxed-check-group boxed-check-outline-dark"> ... </div>
 
+### Inline & Size
+BoxedCheck on the same horizontal row by adding ```.boxed-check-inline``` to any ```.boxed-check```.
+
+![overview](http://res.beanie.top/BoxedCheck/demo5.png)
+
+	<div class="boxed-check-group boxed-check-default">
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-inline" checked>
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-inline">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-inline">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	</div>
+
+Fancy larger or smaller BoxedCheck? Add ```.boxed-check-lg``` or ```.boxed-check-sm``` for additional sizes.
+
+![overview](http://res.beanie.top/BoxedCheck/demo6.png)
+ 
+	<div class="boxed-check-group boxed-check-default boxed-check-lg">
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-lg" checked>
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-lg">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-lg">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	</div>
+	<div class="boxed-check-group boxed-check-default boxed-check-sm">
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-sm" checked>
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-sm">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	    <label class="boxed-check boxed-check-inline">
+	        <input class="boxed-check-input" type="radio" name="radio-size-sm">
+	        <div class="boxed-check-label">Default</div>
+	    </label>
+	</div>
+
 ### Using Custom Layout
 Adding custom Layout into ```.boxed-check-label```.
 
