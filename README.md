@@ -1,6 +1,6 @@
 English [简体中文](README.CN.md)
 
-# BoxedCheck for Radio & Checkbox v1.0.0
+# BoxedCheck for Radio & Checkbox v1.0.6
 #### Making Radio & Checkbox into a box or card with Pure CSS and No Javascript!
 
 ### Download
@@ -148,6 +148,7 @@ Fancy larger or smaller BoxedCheck? Add ```.boxed-check-lg``` or ```.boxed-check
 	        <div class="boxed-check-label">Default</div>
 	    </label>
 	</div>
+
 
 ### Using Custom Layout
 Adding custom Layout into ```.boxed-check-label```.
