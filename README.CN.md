@@ -1,6 +1,6 @@
 简体中文 [English](README.md)
 
-# BoxedCheck for Radio & Checkbox v1.0.6
+# BoxedCheck for Radio & Checkbox v1.0.7
 #### 纯净的CSS，没有任何JavaScript代码，盒式/卡片式的 Radio 和 Checkbox 美化!
 
 ### 下载

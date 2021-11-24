@@ -1,6 +1,6 @@
 English [简体中文](README.CN.md)
 
-# BoxedCheck for Radio & Checkbox v1.0.6
+# BoxedCheck for Radio & Checkbox v1.0.7
 #### Making Radio & Checkbox into a box or card with Pure CSS and No Javascript!
 
 ### Download
