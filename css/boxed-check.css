@@ -1,5 +1,5 @@
 /*
- * BoxedCheck from flyArtist v1.0.7
+ * BoxedCheck from flyArtist v1.0.6
  * https://github.com/flyartist/boxed-check
  */
 .boxed-check-group,
@@ -23,8 +23,9 @@
     display: none;
 }
 .boxed-check-group .boxed-check .boxed-check-input:disabled + .boxed-check-label {
-    border: 2px dashed #bec2c6;
-    opacity: .3;
+    border: 1px dashed #bec2c6;
+    opacity: .4;
+    cursor: not-allowed;
 }
 .boxed-check-group .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover{
@@ -33,7 +34,7 @@
 .boxed-check-group .boxed-check .boxed-check-label {
     display: block;
     background-color: #ffffff;
-    border: 2px solid #dee2e6;
+    border: 1px solid #ced4da;
     padding: .5rem 1rem;
     margin: 0;
     border-radius: .25rem;
@@ -52,12 +53,12 @@
 }
 .boxed-check-group.boxed-check-default .boxed-check .boxed-check-input:checked + .boxed-check-label {
     color: #000000;
-    background-color: #dee2e6;
+    background-color: #ced4da;
 }
 .boxed-check-group.boxed-check-default .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group.boxed-check-default .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover {
-    border-color: #dee2e6;
-    background-color: #dee2e6;
+    border-color: #ced4da;
+    background-color: #ced4da;
 }
 .boxed-check-group.boxed-check-outline-default .boxed-check .boxed-check-input:checked + .boxed-check-label *{
     color: #000000;
