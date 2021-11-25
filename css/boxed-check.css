@@ -1,5 +1,5 @@
 /*
- * BoxedCheck from flyArtist v1.0.6
+ * BoxedCheck from flyArtist v1.0.7
  * https://github.com/flyartist/boxed-check
  */
 .boxed-check-group,
@@ -31,17 +31,29 @@
 .boxed-check-group .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover{
     border-color: #198754;
 }
+.boxed-check-group .boxed-check .boxed-check-input:checked + .boxed-check-label::before {
+	content: ' ';
+	position: absolute;
+	width: 10px;
+	height: 6px;
+	border-width: 0 0 2px 2px;
+	border-style: solid;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	right: 4px;
+	top: 6px;
+}
 .boxed-check-group .boxed-check .boxed-check-label {
     display: block;
     background-color: #ffffff;
     border: 1px solid #ced4da;
-    padding: .5rem 1rem;
+    padding: .5rem 1.3rem;
     margin: 0;
     border-radius: .25rem;
     cursor: pointer;
 }
 .boxed-check-group.boxed-check-sm .boxed-check .boxed-check-label {
-    padding: .2rem .7rem;
+    padding: .2rem 1.3rem;
 }
 .boxed-check-group.boxed-check-lg .boxed-check .boxed-check-label {
     padding: .8rem 1.3rem;
@@ -72,8 +84,11 @@
     border-color: #198754;
     background-color: #ffffff;
 }
+.boxed-check-group.boxed-check-outline-default .boxed-check .boxed-check-input:checked + .boxed-check-label::before {
+	border-color: #198754;
+}
 
-/* boxed-check colorful theme */
+/* boxed-check colorful primary theme */
 .boxed-check-group.boxed-check-primary .boxed-check .boxed-check-input:checked + .boxed-check-label *{
     color: #ffffff;
 }
@@ -84,10 +99,12 @@
 .boxed-check-group.boxed-check-primary .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group.boxed-check-primary .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover,
 .boxed-check-group.boxed-check-outline-primary .boxed-check .boxed-check-input:checked + .boxed-check-label,
+.boxed-check-group.boxed-check-outline-primary .boxed-check .boxed-check-input:checked + .boxed-check-label::before,
 .boxed-check-group.boxed-check-outline-primary .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover {
     border-color: #0d6efd;
 }
 
+/* boxed-check colorful secondary theme */
 .boxed-check-group.boxed-check-secondary .boxed-check .boxed-check-input:checked + .boxed-check-label *{
     color: #ffffff;
 }
@@ -98,10 +115,12 @@
 .boxed-check-group.boxed-check-secondary .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group.boxed-check-secondary .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover,
 .boxed-check-group.boxed-check-outline-secondary .boxed-check .boxed-check-input:checked + .boxed-check-label,
+.boxed-check-group.boxed-check-outline-secondary .boxed-check .boxed-check-input:checked + .boxed-check-label::before,
 .boxed-check-group.boxed-check-outline-secondary .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover {
     border-color: #6c757d;
 }
 
+/* boxed-check colorful success theme */
 .boxed-check-group.boxed-check-success .boxed-check .boxed-check-input:checked + .boxed-check-label *{
     color: #ffffff;
 }
@@ -112,10 +131,12 @@
 .boxed-check-group.boxed-check-success .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group.boxed-check-success .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover,
 .boxed-check-group.boxed-check-outline-success .boxed-check .boxed-check-input:checked + .boxed-check-label,
+.boxed-check-group.boxed-check-outline-success .boxed-check .boxed-check-input:checked + .boxed-check-label::before,
 .boxed-check-group.boxed-check-outline-success .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover {
     border-color: #198754;
 }
 
+/* boxed-check colorful danger theme */
 .boxed-check-group.boxed-check-danger .boxed-check .boxed-check-input:checked + .boxed-check-label *{
     color: #ffffff;
 }
@@ -126,10 +147,12 @@
 .boxed-check-group.boxed-check-danger .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group.boxed-check-danger .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover,
 .boxed-check-group.boxed-check-outline-danger .boxed-check .boxed-check-input:checked + .boxed-check-label,
+.boxed-check-group.boxed-check-outline-danger .boxed-check .boxed-check-input:checked + .boxed-check-label::before,
 .boxed-check-group.boxed-check-outline-danger .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover {
     border-color: #dc3545;
 }
 
+/* boxed-check colorful warning theme */
 .boxed-check-group.boxed-check-warning .boxed-check .boxed-check-input:checked + .boxed-check-label *{
     color: #000000;
 }
@@ -140,10 +163,12 @@
 .boxed-check-group.boxed-check-warning .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group.boxed-check-warning .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover,
 .boxed-check-group.boxed-check-outline-warning .boxed-check .boxed-check-input:checked + .boxed-check-label,
+.boxed-check-group.boxed-check-outline-warning .boxed-check .boxed-check-input:checked + .boxed-check-label::before,
 .boxed-check-group.boxed-check-outline-warning .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover {
     border-color: #ffc107;
 }
 
+/* boxed-check colorful info theme */
 .boxed-check-group.boxed-check-info .boxed-check .boxed-check-input:checked + .boxed-check-label *{
     color: #ffffff;
 }
@@ -154,10 +179,12 @@
 .boxed-check-group.boxed-check-info .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group.boxed-check-info .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover,
 .boxed-check-group.boxed-check-outline-info .boxed-check .boxed-check-input:checked + .boxed-check-label,
+.boxed-check-group.boxed-check-outline-info .boxed-check .boxed-check-input:checked + .boxed-check-label::before,
 .boxed-check-group.boxed-check-outline-info .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover {
     border-color: #0dcaf0;
 }
 
+/* boxed-check colorful dark theme */
 .boxed-check-group.boxed-check-dark .boxed-check .boxed-check-input:checked + .boxed-check-label *{
     color: #ffffff;
 }
@@ -168,6 +195,7 @@
 .boxed-check-group.boxed-check-dark .boxed-check .boxed-check-input:checked + .boxed-check-label,
 .boxed-check-group.boxed-check-dark .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover,
 .boxed-check-group.boxed-check-outline-dark .boxed-check .boxed-check-input:checked + .boxed-check-label,
+.boxed-check-group.boxed-check-outline-dark .boxed-check .boxed-check-input:checked + .boxed-check-label::before,
 .boxed-check-group.boxed-check-outline-dark .boxed-check .boxed-check-input:not(:disabled) + .boxed-check-label:hover {
     border-color: #212529;
 }
